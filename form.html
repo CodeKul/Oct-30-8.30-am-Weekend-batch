@@ -16,7 +16,7 @@
 
     <form>
         <label for="fname">First Name</label>
-        <input minlength="3" maxlength="10" placeholder=" Name"  id="fname" type="text"> <br>
+        <input minlength="3" maxlength="10" placeholder=" Name" pattern="/^[A-Za-z]+$/"  id="fname" type="text"> <br>
 
         <label for="">gender</label>
         <label for="">Male</label>
@@ -34,13 +34,34 @@
         <input type="time"> <br>
 
         <label for="">Age</label>
-        <input type="number" name="" id="">
+        <input min="18" type="number" name="" id=""> <br>
 
-        <select name="" id="">
+        <label for="">Contact Number</label>
+        <input minlength="7" pattern="[7-9]{3}-[0-9]{3}-[0-9]{4}" type="tel">
+
+        <label for="">Select Technology</label>
+
+        <select multiple name="" id="">
+            <optgroup label="Frontend">
             <option value="html">HTML</option>
             <option value="css">CSS</option>
             <option value="js">Javascript</option>
-        </select>
+        </optgroup>
+
+        <optgroup label="Backend">
+            <option value="html">Java</option>
+            <option value="css">Database</option>
+            <option value="js">Spring</option>
+        </optgroup>
+        </select>  <br>
+
+        <input list="city" type="text">
+
+        <datalist id="city">
+            <option >Pune</option>
+            <option >Mumbai</option>
+            <option >Banglore</option>
+        </datalist>
 
         <input type="datetime-local" name="" id="">
 
@@ -54,11 +75,21 @@
         <input type="checkbox">
         <label for="">Hindi</label>
 
-        <input type="checkbox">
+        <input type="checkbox"> <br>
+
+        <label for="">Upload Documents</label>
+        <input accept="image/jpeg" multiple type="file"> <br>
+
+        <input type="range">
 
 
         <label for="">Email</label>
-        <input placeholder="name@xyz.com" type="email"> <br>
+        <input required placeholder="name@xyz.com" type="email"> <br>
+
+        <label for="">Obtained Marks</label>
+        <input type="text">
+        <label for="">Out of Marks</label>
+        <input disabled value="100" type="text">
 
         <label for="">Password</label>
         <input type="password">
