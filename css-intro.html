@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div,
+      .container {
+        height: 150px;
+        width: 150px;
+        background-color: blue;
+        margin: 10px;
+        display: inline-block;
+        position: relative;
+      }
+
+      /* https://ishadeed.com/article/handling-text-over-image-css/ */
+      /* position property defines the reference point from where to move  */
+      .container2 {
+        background-color: red;
+      }
+
+      .container4 {
+        background-color: yellow;
+      }
+      .container3 {
+        background-color: green;
+        position: sticky;
+       right: 0;
+
+      top: 50%;
+      }
+
+      .main-container{
+          height: 900px;
+      }
+
+      .child1,
+      .child2,
+      .child3 {
+        margin: 10px;
+        height: 50px;
+        width: 50px;
+      }
+
+      .child2 {
+        background-color: aqua;
+        position: absolute;
+        left: 40px;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+
+    <div class="main-container">
+    <div class="container1">One</div>
+
+    <div class="container2">Two</div>
+
+    <div class="container3">Three</div>
+
+    <div class="container4">Four</div>
+
+    <!-- <div class="container">
+        <div style="background-color: red;" class="child1"></div>
+        <div class="child2"></div>
+        <div style="background-color: yellow;" class="child3"></div>
+
+    </div> -->
+
+   
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+      quas consectetur quaerat, dicta voluptas magni modi, dolores deserunt
+      corrupti blanditiis ex accusamus necessitatibus. Cum alias mollitia
+      dolore. Provident, nulla deserunt. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Ea voluptate facere architecto ullam iusto natus
+      corporis quis ad nam, similique laboriosam, optio aspernatur ex
+      voluptatibus libero quia, cumque magnam suscipit! Lorem ipsum, dolor sit
+      amet consectetur adipisicing elit. Quae doloribus architecto ut, fugiat
+      ipsum accusantium. Consequatur nisi nesciunt officiis modi voluptatibus,
+      in quos atque et ut velit provident rerum possimus.
+    </div>
+
+  </body>
+</html>
