@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
-        /* display flex to make a block as a flex-container 
+      /* display flex to make a block as a flex-container 
         flex-direction - it defines the direction of how and in which direction elements will be placed 
         
         placing of the elements(child elements) can be done by 
@@ -20,33 +19,108 @@
         https://css-tricks.com/snippets/css/a-guide-to-flexbox/
         
         */
-        
-        
-        
-        .container{
-            display: flex;
-            flex-direction: row;
-            border: solid 2px black;
-            height: 900px;
-            justify-content: flex-end;
-            align-items: flex-end;
+
+      /* difference between align-content and align-items */
+      /* Box-model, Grid and Media Queries */
+
+      /* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+
+      .container {
+        /* width: 600px; */
+        display: flex;
+        flex-direction: row;
+        border: solid 2px black;
+        height: 900px;
+        gap: 20px 30px;
+
+        /* gap: row-gap column-gap */
+        /* flex-wrap: wrap; */
+        /* justify-content: flex-end;
+            
+            align-items: flex-end; */
+      }
+
+      /* row direction 
+        justify keyword - aligning elements in horizontal axis
+        align keyword - aligning elements in vertical axis */
+
+      .flex-item {
+        border: solid 2px red;
+        height: 200px;
+        width: 200px;
+      }
+
+      .flex-item-1 {
+          /* flex-grow: 0; */
+          flex-shrink: 5;
+        order: 2;
+      }
+
+      .flex-item-2 {
+          /* flex-grow: 5; */
+          flex-shrink: 1;
+        order: 1;
+        /* align-self: center;
+    justify-self: flex-start; */
+      }
+
+      .flex-item-4 {
+        order: 7;
+      }
+
+      .flex-item-5 {
+        order: 3;
+       
+      }
+
+      .flex-item-3 {
+        order: 5;
+       
+      }
+
+      .block img {
+        width: 100%;
+      }
+      .block {
+        display: flex;
+      }
+
+      @media screen and (max-width: 500px) {
+        .column-1 {
+          order: 2;
         }
-
-.flex-item{
-    border: solid 2px red;
-    height: 200px;
-    width: 200px;
-}
+        .column-2 {
+          order: 1;
+        }
+      }
     </style>
-</head>
-<body>
-    <div class="container">
+  </head>
+  <body>
+    <div class="block">
+      <div class="column-1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nemo
+          dolore amet, veniam aliquid temporibus provident odio aliquam, quis
+          unde asperiores tempore cumque officia ipsum quam, eligendi magnam
+          suscipit deserunt?
+        </p>
+      </div>
 
-        <div class="flex-item-1 flex-item">One</div>
-        <div class="flex-item-1 flex-item">Two</div>
-        <div class="flex-item-1 flex-item">Three</div>
-        <div class="flex-item-1 flex-item">Four</div>
-
+      <div class="column-2">
+        <img src="./resources/2.jpg" alt="" />
+      </div>
     </div>
-</body>
+
+    <div class="container">
+      <div class="flex-item-1 flex-item">One</div>
+      <div class="flex-item-2 flex-item">Two</div>
+      <!-- <div class="flex-item-3 flex-item">Three</div>
+      <div class="flex-item-4 flex-item">Four</div>
+
+      <div class="flex-item-5 flex-item">Five</div>
+      <div class="flex-item-6 flex-item">Six</div>
+      <div class="flex-item-7 flex-item">Seven</div>
+      <div class="flex-item-8 flex-item">Eight</div> -->
+    </div>
+  </body>
 </html>
