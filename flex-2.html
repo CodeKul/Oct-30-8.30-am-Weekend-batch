@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* flex-direction row 
+        justify - aligning elements horizontally
+        align - aligning elements vertically
+
+
+        flex-direction column
+        align - aligning elements horizontally
+        justify - aligning elements vertically */
+
+      .container {
+        height: 600px;
+        /* width: 400px; */
+        border: 2px black solid;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: ;
+        align-items: ; */
+        /* justify-content:space-evenly; */
+        /* flex-wrap: wrap; */
+        align-content:flex-end;
+      }
+      .flex-item {
+        height: 170px;
+        width:170px;
+        border: 2px red solid;
+      }
+
+      /* .flex-item-1{
+          font-size: 40px;
+      }
+
+      .flex-item-2{
+          font-size: 25px;
+          height: 50px;
+          width: 50px;
+      }
+
+      .flex-item-3{
+          font-size: 80px;
+          height: 300px;
+          width: 400px;
+      }
+
+      .flex-item-4{
+          font-size: 5px;
+          height: 60px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-item flex-item-1">One</div>
+      <div class="flex-item flex-item-2">Two</div>
+      <div class="flex-item flex-item-3">Three</div>
+      <div class="flex-item flex-item-4">Four</div>
+
+      <div class="flex-item flex-item-1">One</div>
+      <div class="flex-item flex-item-2">Two</div>
+      <div class="flex-item flex-item-3">Three</div>
+      <div class="flex-item flex-item-4">Four</div>
+
+
+      <div class="flex-item flex-item-1">One</div>
+      <div class="flex-item flex-item-2">Two</div>
+      <div class="flex-item flex-item-3">Three</div>
+    </div>
+  </body>
+</html>
