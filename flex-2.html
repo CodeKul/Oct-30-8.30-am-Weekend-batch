@@ -26,11 +26,11 @@
         align-items: ; */
         /* justify-content:space-evenly; */
         /* flex-wrap: wrap; */
-        align-content:flex-end;
+        align-items: flex-start;
       }
       .flex-item {
         height: 170px;
-        width:170px;
+        width: 170px;
         border: 2px red solid;
       }
 
@@ -54,6 +54,44 @@
           font-size: 5px;
           height: 60px;
       } */
+
+      .flex-item-2 {
+        align-self: center;
+        order: 5;
+      }
+
+      .flex-item-1 {
+        order: 2;
+      }
+      .flex-item-3 {
+        order: 9;
+      }
+      .flex-item-4 {
+        order: 6;
+      }
+      .flex-item-5 {
+        order: 11;
+      }
+      .flex-item-6 {
+        order: 10;
+      }
+      .flex-item-7 {
+        order: 3;
+      }
+      .flex-item-8 {
+        order: 7;
+      }
+      .flex-item-9 {
+        order: 4;
+      }
+      .flex-item-10 {
+        order: 8;
+      }
+      .flex-item-11 {
+        order: 1;
+        /* flex-grow: 5; */
+        flex-shrink: 5;
+      }
     </style>
   </head>
   <body>
@@ -63,15 +101,14 @@
       <div class="flex-item flex-item-3">Three</div>
       <div class="flex-item flex-item-4">Four</div>
 
-      <div class="flex-item flex-item-1">One</div>
-      <div class="flex-item flex-item-2">Two</div>
-      <div class="flex-item flex-item-3">Three</div>
-      <div class="flex-item flex-item-4">Four</div>
+      <!-- <div class="flex-item flex-item-5">Five</div>
+      <div class="flex-item flex-item-6">Six</div>
+      <div class="flex-item flex-item-7">Seven</div>
+      <div class="flex-item flex-item-8">Eight</div> -->
 
-
-      <div class="flex-item flex-item-1">One</div>
-      <div class="flex-item flex-item-2">Two</div>
-      <div class="flex-item flex-item-3">Three</div>
+      <div class="flex-item flex-item-9">Nine</div>
+      <div class="flex-item flex-item-10">Ten</div>
+      <div class="flex-item flex-item-11">Eleven</div>
     </div>
   </body>
 </html>
