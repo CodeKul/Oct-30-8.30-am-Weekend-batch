@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        gap: 10px;
+        grid: 2fr 1fr / repeat(3, 1fr) 2fr;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .one {
+        grid-column: 1/4;
+      }
+      .latest-news,
+      three,
+      four,
+      five {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-items one">
+        <img src="./resources/2.jpg" alt="" />
+      </div>
+      <div class="grid-items latest-news two"></div>
+      <div class="grid-items three">
+        <img src="./resources/2.jpg" alt="" />
+        <h1>Card Title</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          deleniti ratione alias, dolore quae provident totam eveniet officia
+          dignissimos consequuntur architecto aperiam non expedita natus quas
+          beatae excepturi in cum.
+        </p>
+      </div>
+      <div class="grid-items four">
+        <img src="./resources/2.jpg" alt="" />
+        <h1>Card Title</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          deleniti ratione alias, dolore quae provident totam eveniet officia
+          dignissimos consequuntur architecto aperiam non expedita natus quas
+          beatae excepturi in cum.
+        </p>
+      </div>
+      <div class="grid-items five">
+        <img src="./resources/2.jpg" alt="" />
+        <h1>Card Title</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          deleniti ratione alias, dolore quae provident totam eveniet officia
+          dignissimos consequuntur architecto aperiam non expedita natus quas
+          beatae excepturi in cum.
+        </p>
+      </div>
+      <div class="grid-items six"></div>
+    </div>
+  </body>
+</html>

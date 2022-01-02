@@ -13,9 +13,16 @@
         .container{
             display: grid;
             border: solid 2px black;
-            grid-template-columns:1fr 2fr 3fr 2fr;
-            grid-template-rows: 200px 200px;
-            /* justify-items: end; */
+            /* grid-template-columns:minmax(200px, 500px) 2fr 3fr 2fr;
+            grid-template-rows: 200px 200px; */
+
+            grid:200px 200px/ minmax(200px, 500px) 2fr 3fr 2fr;
+
+            /* grid: rows/columns */
+            /* justify-items: center;
+            align-items: center; */
+            /* place-items: start; */
+            
         }
 
         .grid-items{
@@ -25,10 +32,12 @@
         }
 
         .two{
-            grid-column-start: 2;
+            grid-column-start: 3;
             grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 3;
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+
+            grid-row: 1/3;
         }
     </style>
 </head>
