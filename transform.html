@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+    <!-- https://3dtransforms.desandro.com/box -->
+    <style>
+      .container {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+      }
+
+
+      .main-container{
+          transform-style: preserve-3d;
+          perspective: 900px;
+      }
+      .container:hover {
+        transform: translateZ(100px);
+        transform: rotateZ(180deg);
+      
+        /* transform: rotateZ(180deg);
+        transform: scale(3);
+        transform: skewY(40deg); */
+        transition-duration: 5s;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <!-- 2d and 3d transform properties -->
+    <!-- transform - translate, rotate, scale, skew -->
+    <div class="main-container">
+      <div class="container">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>

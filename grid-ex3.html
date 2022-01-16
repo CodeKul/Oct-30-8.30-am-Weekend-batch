@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 200px) 500px;
+        grid-template-rows: 500px 300px;
+        gap: 10px;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .one {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .two{
+          /* background-color: black; */
+          grid-row-start: 1;
+          grid-row-end: 3;
+          grid-column-start: 4;
+          grid-column-end: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-items one">
+        <img src="./resources/3.jpg" alt="" />
+      </div>
+      <div class="grid-items two">
+
+
+
+      </div>
+      <div class="grid-items three">
+        <div class="card">
+          <img src="./resources/3.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat et
+            beatae quia eos, enim error at natus aliquid, sit, commodi ipsa quod
+            ullam itaque porro cumque quasi odio voluptatibus! Unde!
+          </p>
+        </div>
+      </div>
+      <div class="grid-items four">
+        <div class="card">
+          <img src="./resources/3.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat et
+            beatae quia eos, enim error at natus aliquid, sit, commodi ipsa quod
+            ullam itaque porro cumque quasi odio voluptatibus! Unde!
+          </p>
+        </div>
+      </div>
+      <div class="grid-items five">
+        <div class="card">
+          <img src="./resources/3.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat et
+            beatae quia eos, enim error at natus aliquid, sit, commodi ipsa quod
+            ullam itaque porro cumque quasi odio voluptatibus! Unde!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .main-container {
+     position: relative;
+        height: 400px;
+        width: 400px;
+        perspective: 800px;
+        
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .inner-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+       transition-duration: 5s;
+       transform-style: preserve-3d;
+       
+      }
+
+      .front-section,
+      .back-section {
+        position: absolute;
+        backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+       
+      }
+
+      .back-section {
+        background-color: tomato;
+        color: white;
+        transform: rotateY(180deg);
+      
+      }
+
+      .main-container:hover
+      .inner-container {
+        transform: rotateY(180deg);
+        transition-duration: 5s;
+      }
+
+      li{
+          list-style: none;
+      }
+
+      li:hover{
+          transform: translateX(100px);
+          color: blue;
+          transition-duration: 5s;
+          transition-delay: 3s;
+          transition-property: transform;
+          transition-timing-function: ease;
+
+          transition: transform 5s 3s ease-in ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="inner-container">
+        <div class="front-section">
+          <img src="./resources/3.jpg" alt="" />
+        </div>
+        <div class="back-section">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ex
+          sequi eius cum! Corrupti necessitatibus doloribus hic impedit nemo aut
+          amet? Porro optio, quidem maiores sint aspernatur aperiam vitae
+          suscipit.
+        </div>
+      </div>
+    </div>
+
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+  </body>
+</html>

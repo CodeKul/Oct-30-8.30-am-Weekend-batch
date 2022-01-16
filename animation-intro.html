@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+    <!-- try pulse effect -->
+    <style>
+      .container {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        animation-name: rightToLeft;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes leftToRight {
+        from {
+          position: absolute;
+          left: 0;
+        }
+
+        to {
+          position: absolute;
+          left: 500px;
+        }
+      }
+
+      @keyframes rightToLeft {
+          0% {position: absolute; right: 0;}
+          25% {background-color: red;}
+          50% {background-color: yellow;}
+          75% {background-color: green;}
+          100% {position: absolute; right: 500px;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
