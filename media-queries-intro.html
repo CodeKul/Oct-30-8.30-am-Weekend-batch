@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        @media screen ,(min-width: 500px), (max-width:700px){
+            .container{
+                background-color: black;
+                color: white;
+            }
+        }
+
+
+        @media print ,(max-width: 700px){
+            .container{
+                background-color: yellow;
+                color: red;
+            }
+        }
+
+        /* @media screen/print/speech/all and (max-width: 300px) and (min-width: 600px){
+
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque quasi
+        impedit nobis vel eos soluta laborum mollitia sit voluptatibus corrupti,
+        libero deserunt quisquam omnis facilis aliquid quidem labore dolorum ut!
+      </p>
+    </div>
+  </body>
+</html>

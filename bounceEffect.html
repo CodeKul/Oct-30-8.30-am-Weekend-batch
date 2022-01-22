@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @keyframes bounce {
+        0% {
+          transform: translateY(-100px);
+        }
+        25% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes backoutDown {
+        50% {
+          transform: scale(0.5);
+          opacity: 1;
+        }
+        100% {
+          position: absolute;
+          bottom: 0;
+          opacity: 0;
+        }
+      }
+
+      .container {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        animation-name: backoutDown;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Codekul</h1>
+    </div>
+  </body>
+</html>
