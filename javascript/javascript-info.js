@@ -28,12 +28,33 @@ let cities = ["mumbai", "pune", "delhi"]
 // 1. declaration - declaring there is some variable with respective name
 // 2. Initialization - assigning some value for the variable
 
+// var keyword variable is a global scope as well as function scope variable
+// let keyword variable is a block/local scope as well as function scope variable 
 
 
+
+const PI =3.14;
+
+// PI=2.14;
+console.log(PI)
 if(true){
-    var num1 =100;
+    let num1 =100;
+    num1=300;
     console.log(num1)
 }
 
 
 console.log(num1)
+
+function display (){
+    var num2 = 200;
+    console.log(num2);
+}
+
+
+display()
+console.log(num2);
+
+
+
+
