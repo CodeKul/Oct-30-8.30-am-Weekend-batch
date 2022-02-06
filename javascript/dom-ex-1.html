@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <p id="para">Codekul</p>
+    <button onclick="createForm()">Create Form</button>
+    <button onclick="deletePara()">Delete Paragraph</button>
+
+    <script>
+
+function deletePara(){
+    let para = document.getElementById("para")
+    para.remove()
+}
+
+      const createForm = () => {
+          let body = document.body;
+          let div = document.createElement("div")
+          let fullnameInputField = document.createElement("input")
+          let emailInputField = document.createElement("input") 
+          let passwordInputField = document.createElement("input")
+
+          fullnameInputField.setAttribute("type", "text")
+          emailInputField.setAttribute("type", "email")
+          passwordInputField.setAttribute("type", "password")
+
+          fullnameInputField.setAttribute("class", "news")
+
+          body.append(div)
+          div.append(fullnameInputField)
+         div.append(emailInputField)
+         div.append(passwordInputField)
+      };
+    </script>
+  </body>
+</html>
