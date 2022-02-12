@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div id="div">Click Div 
+        <p id="p" >Click P 
+            <a id="a" href="#">Click Anchor Element</a>
+        </p>
+    </div>
+
+    <script>
+
+        // https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/
+        // https://www.loginradius.com/blog/async/javascript-events-bubbling-capturing-and-propagation/
+        // https://blog.logrocket.com/deep-dive-into-event-bubbling-and-capturing/
+        // https://javascript.info/event-delegation
+        // https://www.geeksforgeeks.org/event-delegation-in-javascript/
+
+        // event propagation, event.preventDefault(), event delegation
+
+        // mobile small - <350, medium-350-500
+        // tab - 600-990
+        // 992 > desktop
+
+        setTimeout()
+
+        let elements = document.querySelectorAll('div, p, a')
+
+        for (const iterator of elements) {
+            iterator.addEventListener("click", ()=>{
+            alert(`Clicked on ${iterator.tagName}`)
+         }, true)
+        }
+
+        // https://simbathesailor007.medium.com/method-chaining-currying-javascript-b6fc3324592c
+        sum(1)(2)(3)(4)
+        // let div = document.getElementById("div")
+        // div.addEventListener("click", ()=>{
+        //     alert('Clicked on Div')
+        // }, true)
+
+        // let p = document.getElementById("p")
+        // p.addEventListener("click", ()=>{
+        //     alert('Clicked on p')
+        // }, true)
+
+        // let a = document.getElementById("a")
+        // a.addEventListener("click", ()=>{
+        //     alert('Clicked on a')
+        // }, true)
+    </script>
+</body>
+</html>

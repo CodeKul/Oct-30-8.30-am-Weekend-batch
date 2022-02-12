@@ -15,34 +15,75 @@
         praesentium.
       </p>
     </div> -->
-    <input id="fname" type="text" />
 
-    <button onclick="display()">Access Data</button>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sunt pariatur
+      rerum aut neque repellendus veniam, commodi corporis est excepturi
+      explicabo magni atque, veritatis blanditiis! Labore eum sed consequatur
+      accusantium?
+    </p>
+    <input onkeydown="displayData()" id="fname" type="text" />
+
+    <button  onclick="display()">Access Data</button>
 
     <button onclick="createPara()">Create Paragrapgh</button>
 
-    <script>
-      function display() {
-        let fullname = document.getElementById("fname");
-        console.log(fullname);
+    <button onclick="createHyperLink()">Create HyperLink</button>
 
-        fullname.style.color = "red";
+    <script>
+      function displayData() {
+        let data = document.getElementById("fname").value;
+        console.log(data);
       }
 
+      function createHyperLink() {
+        let body = document.body;
+        let anchor = document.createElement("a");
+        console.log(anchor);
+        body.append(anchor);
+        let linkText = "Visit To Google";
+        anchor.append(linkText);
+        anchor.setAttribute("href", "https://www.google.com");
+        anchor.setAttribute("class", "anchor_tag");
+        let xyz = anchor.getAttribute("class");
+        console.log(xyz);
+        anchor.style.color = "red";
+      }
+
+
+      let paragrapgh = document.getElementById("para");
+      function display() {
+       
+        console.log(paragrapgh);
+      }
+
+      function applyStyle() {
+
+        paragrapgh.style.color = "red";
+      }
+
+      paragrapgh.addEventListener("click", ()=>{
+        display()
+      })
+
+      paragrapgh.addEventListener("click", ()=>{
+        applyStyle()
+      })
+
       function createPara() {
-          let container = document.createElement("div")
+        let container = document.createElement("div");
         let para = document.createElement("p");
 
         let body = document.body;
 
-        // appending element syntax - > 
+        // appending element syntax - >
         // parentElement.appendChild(childElement)
 
-        body.appendChild(container)
+        body.appendChild(container);
         console.log(para);
-        container.append(para)
-        let content = "Welcome to Javascript World...!!"
-        para.append(content)
+        container.append(para);
+        let content = "Welcome to Javascript World...!!";
+        para.append(content);
       }
     </script>
   </body>
