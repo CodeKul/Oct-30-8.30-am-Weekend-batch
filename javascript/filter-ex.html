@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="range"
+      step="10000"
+      min="10000"
+      max="50000"
+      name=""
+      id="range"
+    />
+
+    <button onclick="filterProduct()">Filter</button>
+    <script>
+      let data = [
+        {
+          product: "Samsung",
+          price: 10000,
+          details: "Samsung S10",
+        },
+        {
+          product: "Iphone",
+          price: 25000,
+          details: "Samsung S10",
+        },
+        {
+          product: "Motorola",
+          price: 7000,
+          details: "Samsung S10",
+        },
+        {
+          product: "Vivo",
+          price: 15000,
+          details: "Samsung S10",
+        },
+        {
+          product: "RealMe",
+          price: 35000,
+          details: "Samsung S10",
+        },
+
+        {
+          product: "Samsung",
+          price: 40000,
+          details: "Samsung S10",
+        },
+
+        {
+          product: "Samsung",
+          price: 50000,
+          details: "Samsung S10",
+        },
+      ];
+
+      function filterProduct() {
+        let price = parseInt(document.getElementById("range").value);
+        console.log(price);
+
+        let x = data.filter((i) => {
+          return i.price < price;
+        });
+
+        console.log(x);
+      }
+    </script>
+  </body>
+</html>

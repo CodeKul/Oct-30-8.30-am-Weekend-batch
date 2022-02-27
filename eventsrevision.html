@@ -10,7 +10,7 @@
 
     <input id="input"  type="text">
     
-    <button onmouseleave="display()">Create Message</button>
+    <button id="btn" onmouseleave="display()">Create Message</button>
     <p id="content"></p>
 
     <script>
@@ -26,15 +26,42 @@ addEventListener('click', ()=>{
     
 })
 
-input.addEventListener('focus', ()=>{
+let btn = document.getElementById("btn");
+btn.removeEventListener('mouseleave', ()=>{
+    setTimeout(()=>{
+    display();
+    console.log("event removed")
+},5000)
+}  )
+
+// input.addEventListener('focus', ()=>{
+//     console.log("Input Focused")
+// }, {once:true})
+
+function displaymsg(){
     console.log("Input Focused")
-})
+}
+
+
+setTimeout(()=>{
+    input.addEventListener('focus', displaymsg)
+},4000)
+
+
+console.log("Event Completed")
+
+input.removeEventListener('focus', displaymsg )
 
 
 
 // targetelement.addeventListener("click", ()=>{
 
 // })
+
+
+  // removeListener
+        // abortSignal method 
+        // { once: true}
 
 
         function display(){

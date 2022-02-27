@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let cities = ["Mumbai", "Pune", "Banglore", "Delhi"]
+      // console.log(cities)
+      // console.log("array length", cities.length);
+
+      // template literals - ES6 feature
+      // console.log(`array length : ${cities.length}`);
+
+      // console.log(cities[3])
+
+      // let numbers = [0,1,5,22,44]
+
+      // let data = ["Pune", 25, {fname: "Sanket B"}, [0,2,3,4]]
+      // console.log(data)
+
+      let array = new Array(10);
+      console.log(array);
+
+      // array methods
+
+      // array.push() - adds the new element in the end
+      // array.pop() - removes the last element
+
+      // let data = [10,20,5,6,88,90];
+
+      let data = [
+        {
+          fname: "Nikita",
+          city: "Pune",
+          designation: "SWE",
+        },
+        {
+          fname: "Sam",
+          city: "Banglore",
+          designation: "Mechanical Engineer",
+        },
+        {
+          fname: "Akash",
+          city: "Pune",
+          designation: "Mechanical Engineer",
+        },
+        {
+          fname: "Sam",
+          city: "Pune",
+          designation: "Designer",
+        },
+      ];
+      console.log(data);
+      data.push(25);
+      console.log(data);
+      // data.pop()
+      // data.pop()
+      // data.pop()
+      // console.log(data)
+
+      // create a list of 15 products
+      // you find the respective product according to price in console.
+      // find and filter method and explain difference.
+
+      let produclist = [
+        {
+          productName: "Iphone X",
+          price: 50000,
+          image: "",
+          details: "",
+        },
+        {
+          productName: "Iphone X",
+          price: 50000,
+          image: "",
+          details: "",
+        },
+        {
+          productName: "Iphone X",
+          price: 50000,
+          image: "",
+          details: "",
+        },
+        {
+          productName: "Iphone X",
+          price: 50000,
+          image: "",
+          details: "",
+        },
+      ];
+
+      let dataAfterFind = data.find((item) => {
+        console.log(item);
+        return item.fname == "Sam";
+      });
+      console.log(dataAfterFind);
+
+      let nums = [10, 12, 22, 2, 4];
+      let output = nums.filter((item) => {
+       return item < 10;
+      });
+
+      console.log(output);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   iterations in js can be done by
+      //   for-loop, do-while, while, array.map,
+      //   array.forEach, for-in and for-off
+
+      // what is the difference between array.map and array.forEach methods
+
+      //   for (let i = 0; i <script 6; i++) {
+      //     console.log("step", i);
+      //   }
+
+      //   for-of statement is used to  iterate over array
+      //   for-in statement is used to  iterate over object properties
+
+      let i = 0;
+      let result = 0;
+
+      //   do {
+      //     i++;
+      //     console.log("step", i);
+      //   } while (i < 6);
+
+      while (i < 6) {
+        i++;
+        console.log("step", i);
+      }
+
+      let data = ["sanket", "nikita", 20, 30, "akash"];
+
+      //   for (let i = 0; i < data.length; i++) {
+      //     console.log(data[i]);
+      //   }
+
+      // data.map((item) => {
+      //   console.log(item);
+      // });
+
+      // data.forEach((item) => console.log(item));
+
+      //  for (const item of data) {
+      //      console.log(item);
+      //  }
+
+      for (const key in data) {
+        console.log(key);
+      }
+
+      let objectData = {
+        name: "Akash",
+        city: "Pune",
+        designation: "SWE",
+      };
+
+      for (const property in objectData) {
+        console.log(`${property} : ${objectData[property]}`);
+      }
+    </script>
+  </body>
+</html>
